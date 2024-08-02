@@ -1,0 +1,10 @@
+<button (click)="loadData1()">Load Data 1</button>
+<button (click)="changeTimeRange1()">Change Time Range 1</button>
+<br>
+<button (click)="loadData2()">Load Data 2</button>
+<button (click)="changeTimeRange2()">Change Time Range 2</button>
+
+<div>
+	<div echarts [options]="chartOptions" [initOpts]="initOpts" [merge]="mergeOptions" (chartInit)="onChartInit()">
+	</div>
+</div>
